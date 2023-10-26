@@ -1,0 +1,127 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black; /* Ubah warna teks menjadi hitam */
+    padding: 10px 20px;
+}
+
+.header-left h1 {
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.header-right {
+    margin-right: 30px;
+}
+
+.header-right button {
+    background-color: transparent;
+    border: none;
+    color: black; /* Ubah warna teks menjadi hitam */
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.header-right button:hover {
+    text-decoration: underline;
+}
+
+#home-content {
+    position: relative;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang dengan transparansi */
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#resumeButton {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img {
+    width: 100%; /* Gambar akan mengisi lebar div "home-content" */
+    max-width: 100%;
+    height: auto;
+}
+
+.info-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.info-content {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.info-button:hover {
+    text-decoration: underline;
+}
+
+.info-content p {
+    margin: 5px 0;
+}
+
+/* Add additional CSS as needed for styling */
+#work {
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak ke vertikal */
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    text-align: center;
+}
+
+#work p {
+    margin: 20px 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}

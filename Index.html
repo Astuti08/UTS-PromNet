@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>UTS PromNet</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <h1>Astuti Solihatunnisa</h1>
+        </div>
+        <div class="header-right">
+            <button>Home</button>
+            <button>About</button>
+            <button>Work</button>
+            <button>Contact</button>
+        </div>
+    </header>
+
+    <section id="home-content">
+        <div class="content">
+            <h1>Astuti Solihatunnisa</h1>
+            <p>I am Bachelor of Education</p>
+            <button id="resumeButton">Resume</button>
+        </div>
+        <img src="c:\Users\Acer\Downloads\aku.jpeg" alt="aku">
+    </section>
+
+        <div id="moreInfo" class="more-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero laboriosam debitis inventore excepturi dolor corporis ducimus numquam, vitae temporibus autem nulla tenetur reprehenderit quasi soluta neque nemo? Ad unde voluptatem corrupti rerum officiis eius similique perspiciatis dolorem ex.</p>
+            <button id="moreInfoButton">More Info</button>
+        </div>
+        <div id="moreInfo" class="more-info">
+            <button class="info-button" data-toggle="info1">Editor Jurnal</button>
+            <button class="info-button" data-toggle="info2">Educational Agent</button>
+            <button class="info-button" data-toggle="info3">Teacher</button>
+        
+            <div id="info1" class="info-content">
+                <p>Integrated (2022-Now)</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 4k. Reprehendent quisquam rerum nisi laborum labore et dolores neque fuga esse commodi nam quia atque aut dolorum! Culpa reprehenderit quo voluptates laboriosam.</p>
+            </div>
+        
+            <div id="info2" class="info-content">
+                <p>Ruangguni (223-Now)</p>
+                <p>Lorem ipsum dolor sit amet contectitur adipisicing elit. Reprehenderit quisquam rerum nisi laborum labore et dolores neque fuga esse commodi nam quia atque aut dolorum! Culpe reprehenderit quo voluptates laboriosam.</p>
+            </div>
+        
+            <div id="info3" class="info-content">
+                <p>Elementary School (2022-2023)</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam rerum nisi laborum labore et dolores neque fuga esse commodi nam qua atque aut dolorum! Culpa reprehendent que voluptates laboriosam.</p>
+            </div>
+        </div>
+        
+
+        <div id="work">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at aspernatur, similique repellendus cum obcaecati necessitatibus, ullam odio minima iure minus inventore, nobis hic dolorum sed. Debitis voluptas quo, veniam repellat est odit assumenda, ea beatae facilis aliquam maxime ab magnam. Provident iste esse officiis deserunt laborum repellendus, architecto placeat?</p>
+            <img src="https://th.bing.com/th/id/OIP.8NYlyvtG2dNF4kn88KkSBgHaEs?pid=ImgDet&rs=1" alt="Work Image 1">
+            <img src="https://th.bing.com/th/id/OIP.IBarI7-x16-U0uOJ3sZOOwHaE8?pid=ImgDet&rs=1" alt="Work Image 2">
+            <img src="https://img.okezone.com/content/2015/10/02/65/1224767/sembilan-tipe-mahasiswa-di-kampus-39WmYFmYCl.jpg" alt="Work Image 3">
+        </div>
+
+    <script>
+        const moreInfoButton = document.getElementById('moreInfoButton');
+        const moreInfo = document.getElementById('moreInfo');
+
+        moreInfoButton.addEventListener('click', () => {
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+                moreInfoButton.textContent = 'Less Info';
+            } else {
+                moreInfo.style.display = 'none';
+                moreInfoButton.textContent = 'More Info';
+            }
+        });
+    </script>
+
+<h1>Contact</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam saepe optio, fugit fuga laudantium, minus magnam deleniti cumque illo tempora tempore facilis aliquam modi quisquam dicta assumenda animi eligendi sunt. Cumque perferendis natus, consectetur accusantium, eius blanditiis quas, delectus atque cum commodi molestiael Cupiditate quod vitae ab molestias: Impedit.
+    </p>
+
+    <form action="proses_form.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br>
+
+        <label for="message">Pesan:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+
+    <ul>
+        <li>
+            <img src="https://www.pngkey.com/png/full/90-902640_facebook-logo-circle-black-transparent-logo-fb-vector.png" alt="Facebook Icon"> <input type="text" id="facebook" name="astuti">
+        </li>
+        <li>
+            <img src="https://th.bing.com/th/id/OIP.xLA_s1h89KfY5lqYnG9N6gHaHa?pid=ImgDet&rs=1" alt="Instagram Icon"> <input type="text" id="instagram" name="asttisn">
+        </li>
+        <li>
+            <img src="https://www.broadsheet.com.au/assets/icons/whatsapp.svg#top" alt="WhatsApp Icon"> <input type="text" id="whatsapp" name="08161334632">
+        </li>
+    </ul>
+    <script src="main.js"></script> 
+</body>
+</html>
